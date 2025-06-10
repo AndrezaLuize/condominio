@@ -113,7 +113,7 @@ export default function CadastrarVeiculoScreen() {
 const styles = StyleSheet.create({
   solidBackground: {
     flex: 1,
-    backgroundColor: '#001f3f', // Azul bem escuro
+    backgroundColor: '#003366',
   },
   scrollContainer: {
     flexGrow: 1,
