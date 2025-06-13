@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator, FlatList, ScrollView } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
-// import api from '../../../../services/api'; // Mantenha este caminho (comentado)
+// import api from '../../../../services/api'; 
 
 interface Encomenda {
   id: string;
@@ -145,8 +145,8 @@ const styles = StyleSheet.create({
   topContainer: { alignItems: 'center', marginBottom: 20 },
   iconCircle: { backgroundColor: '#fff', borderRadius: 50, width: 100, height: 100, justifyContent: 'center', alignItems: 'center', marginBottom: 10, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 5, elevation: 6 },
   gestCondoTitle: { fontSize: 38, fontWeight: 'bold', color: '#fff' },
-  listContainerBox: { // *** AQUI: MANTIDO 95% COMO VOCÊ GOSTA PARA ENCOMENDAS ***
-    width: '95%', // Mantém a largura que você gostou
+  listContainerBox: { 
+    width: '95%', 
     maxWidth: 400,
     backgroundColor: '#fff', borderRadius: 20, padding: 20, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.25, shadowRadius: 5, elevation: 8,
   },
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   paginationControls: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginTop: 10, marginBottom: 20,
   },
-  paginationButton: { backgroundColor: '#20B2AA', paddingVertical: 8, paddingHorizontal: 15, borderRadius: 8 }, // *** CORRIGIDO: Cor do botão de paginação ***
+  paginationButton: { backgroundColor: '#20B2AA', paddingVertical: 8, paddingHorizontal: 15, borderRadius: 8 },
   paginationButtonText: { color: '#fff', fontSize: 15, fontWeight: 'bold' },
   paginationInfo: { fontSize: 15, color: '#555', fontWeight: 'bold' },
   backButtonIconOnly: {
