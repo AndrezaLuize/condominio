@@ -1,9 +1,9 @@
 // app/(main)/listagens/Reservas.tsx
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator, FlatList, ScrollView } from 'react-native';
-import { router } from 'expo-router'; // <<< CORRIGIDO: Certifique-se que esta linha está limpa!
+import { router } from 'expo-router'; 
 import { Ionicons } from '@expo/vector-icons';
-// import api from '../../../../services/api'; // Mantenha este caminho (comentado)
+// import api from '../../../../services/api'; 
 
 interface Reserva {
   id: string;
@@ -34,7 +34,7 @@ export default function ReservasListScreen() {
     // Parte de conexão com Backend - COMENTADA
   }, []);
 
-  const filteredReservas = reservas.filter((reserva: Reserva) => // <<< CORRIGIDO: Tipagem 'reserva: Reserva'
+  const filteredReservas = reservas.filter((reserva: Reserva) => 
     reserva.area.toLowerCase().includes(searchTerm.toLowerCase()) ||
     reserva.morador.toLowerCase().includes(searchTerm.toLowerCase()) ||
     reserva.data.includes(searchTerm)
